@@ -14,12 +14,12 @@ html{
 .container{
     min-height: 800px;
     background: url('coding_backgound.png') center/cover no-repeat;
-    background-color: ad6b47;
 }
 
 .my_projects {
     display: block;
     left: 10px;
+    background-color: ad6b47;
 }
 
 .my_projects a{
