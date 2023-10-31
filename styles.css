@@ -13,7 +13,7 @@ html{
 
 .container{
     min-height: 800px;
-    background: url('backgound.jpg') center/cover no-repeat;
+    background: url('background.jpg') center/cover no-repeat;
 }
 
 .my_projects {
