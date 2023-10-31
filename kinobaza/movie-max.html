@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Кинобаза - это портал о кино" />
+    <meta name="keywords" content="фильмы, фильмы онлайн, hd" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Безумный Макс</title>
+</head>
+<body>
+    <div class="main">
+
+        <header>
+            <div class="logo">
+                <div class="logo_text">
+                    <h1><a href="index.html">Кинобаза</a></h1>
+                    <h2>Кино - наша страсть!</h2>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="selected"><a href="index.html">Главная</a></li>
+                    <li><a href="films.html">Фильмы</a></li>
+                    <li><a href="show.html">Сериалы</a></li>
+                    <li><a href="rating.html">Рейтинг фильмов</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <div class="site_content">
+            <div class="sidebar_container">
+                <aside>
+                    <h2>Поиск</h2>
+                    <form method="post" action="#" id="search_form">
+                        <input type="search" name="search_field" placeholder="Ваш запрос" />
+                        <input type="submit" class="btn" value = "Найти" />
+                    </form>
+                </aside>
+                <aside>
+                    <h2>Вход</h2>
+                    <form method="post" action="#" id="login">
+
+                        <input type="text" name="login_field" placeholder="Логин" />
+                        <input type="password" name="password_field" placeholder="Пароль" />
+                        <input type="submit" class="btn" placeholder="вход" />
+                        <div class="lables_passreg_text">
+                            <span><a href = "#">Забыли пароль?</a></span> | <span><a href="#">
+                                Регистрация</a></span>
+                        </div>
+
+                    </form>
+                </aside>
+
+                <aside>
+                    <h2>Новости</h2>
+                    <span>31.02.2018</span>
+                    <p>Мы запустили расширенный поиск!</p>
+                    <a href="#">читать</a>
+                </aside>
+
+                <aside>
+                    <h2>Рейтинг фильмов</h2>
+                    <ul>
+                        <li><a href="movie-interstellar.html">Интресталлар </a><span class="rating_sidebar"> 8.1</span></li>
+                        <li><a href="movie-matrix.html">Матрица </a><span class="rating_sidebar"> 8.0</span></li>
+                        <li><a href="movie-max.html">Безумный Макс </a><span class="rating_sidebar"> 7.5</span></li>
+                        <li><a href="movie-cloud.html">Облачный атлас </a><span class="rating_sidebar"> 7.4</span></li>
+                        
+                    </ul>
+                </aside>
+
+            </div>
+
+            <div class="content">
+                <h1>Безумный Макс</h1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/an_MiUmpgs0?si=UwcMPMGkVEjaIk6L" 
+                title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <div class="info_film_page">
+                    <span class="label">Рейтинг: </span><span class="value">7.8/10</span>
+                    <span class="label">Год: </span><span class="value">2015</span>
+                    <span class="label">Режиссер: </span><span class="value">Джордж Миллер</span>
+                </div>
+                <h2>Описание</h2>
+                <div class="descriptions_film">
+                    <img src="assets/img/max.png">
+                    Преследуемый призраками беспокойного прошлого Макс уверен, что лучший способ 
+                    выжить - скитаться в одиночестве. Несмотря на это, он присоединяется к бунтарям, 
+                    бегущим через всю пустыню на боевой фуре, под предводительством отчаянной Фуриосы.
+                    Они сбежали из Цитадели, страдающей от тирании Несмертного Джо, и забрали у него 
+                    кое-что очень ценное. Разъярённый диктатор бросает все свои силы в погоню за 
+                    мятежниками, ступая на тропу войны - дорогу ярости.
+                </div>
+
+
+                <hr>
+                <h2>Отзывы о фильме Безумный Макс</h2>
+                <blockquote>
+                    Отличный фильм, 2 часа пролетели незаметно.
+                    <footer>
+                        Сергей
+                    </footer>
+                </blockquote>
+                </div>
+
+                
+                <blockquote>
+                    Самый любимый фильм!
+                    <footer>
+                        Дмитрий 
+                    </footer>
+                </blockquote>
+
+                </div>
+
+                <div class="send">
+                    <form method="post" action="#" id="review">
+                        <input type="text" name="review_name" placeholder="Ваше имя">
+                        <textare name="review_text"> </textare>
+                        <input class="btn" type="submit" value="Отправить"
+                    </form>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>
+                <a href="index.html">Главная</a> |
+                <a href="films.html">Фильмы</a> |
+                <a href="show.html">Сериалы</a> |
+                <a href="rating.html">Рейтинг фильмов</a> |
+                <a href="contact.html">Контакты</a> 
+            </p>
+            <p>kinopoisk.ru</p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
