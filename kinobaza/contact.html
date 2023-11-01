@@ -1,107 +1,406 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Кинобаза - это портал о кино" />
-    <meta name="keywords" content="фильмы, фильмы онлайн, hd" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Контакты</title>
-</head>
-<body>
-
-    <div class = "main">
-
-        <header>
-            <div class = "logo">
-                <div class = "logo_text">
-                    <h1><a href = "index.html">Кинобаза</a></h1>
-                    <h2>Кино - наша страсть!</h2>
-                </div>
-            </div>
-
-            <nav>
-                <ul class = "menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href = "films.html">Фильмы</a></li>
-                    <li><a href = "show.html">Сериалы</a></li>
-                    <li><a href = "rating.html">Рейтинг фильмов</a></li>
-                    <li class="selected"><a href="contact.html">Контакты</a></li>
-                </ul>
-            </nav>
-        </header>
+*{
+    margin: 0;
+    padding: 0;
+}
 
 
-        <div class = "site_content">
-            <div class="sidebar_container">
-            <aside>
-                <h2>Поиск</h2>
-                <form method="post" action="#" id="search_form">
-                    <input type="search" name="search_field" placeholder="Ваш запрос" />
-                    <input type="submit" class="btn" value = "Найти" />
-                </form>
-            </aside>
-            <aside>
-                <h2>Вход</h2>
-                <form method="post" action="#" id="login">
+img a{
+    float:left;
+    margin-right: 20px;
+}
 
-                    <input type="text" name="login_field" placeholder="Логин" />
-                    <input type="password" name="password_field" placeholder="Пароль" />
-                    <input type="submit" class="btn" placeholder="вход" />
-                    <div class="lables_passreg_text">
-                        <span><a href = "#">Забыли пароль?</a></span> | <span><a href="#">
-                            Регистрация</a></span>
-                    </div>
+article{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width:60%;   
+}
 
-                </form>
-            </aside>
+article img{
+    height:300px;
+}
 
-            <aside>
-                <h2>Новости</h2>
-                <span>31.02.2018</span>
-                <p>Мы запустили расширенный поиск!</p>
-                <a href="#">читать</a>
-            </aside>
-            
-            <aside>
-                <h2>Рейтинг фильмов</h2>
-                <ul>
-                    <li><a href="movie-interstellar.html">Интресталлар </a><span class="rating_sidebar"> 8.1</span></li>
-                    <li><a href="movie-matrix.html">Матрица </a><span class="rating_sidebar"> 8.0</span></li>
-                    <li><a href="movie-max.html">Безумный Макс </a><span class="rating_sidebar"> 7.5</span></li>
-                    <li><a href="movie-cloud.html">Облачный атлас </a><span class="rating_sidebar"> 7.4</span></li>
-                    
-                </ul>
-            </aside>
-        </div>
+body{
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #555;
+}
 
-        <div class="content">
-            <h1>Контакты</h1>
-            <p>Отправьте ваш отзыв о портале КиноМонстр</p>
-            <div class="send send_contact">
-                <form method="post" action="#" id="contact">
-                    <input type="text" name="review_name" placeholder="Ваше имя">
-                    <input type="text" name="review_email" placeholder="Ваш email">
-                    <textarea name="review_text"></textarea>
-                    <input type="btn" name="submit" placeholder="Отправить">
-                </form>
-                 </div>
+p{
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
 
-            </div>
+input[type = "text"], input[type = "password"], input[type = "search"]{
+    color:#5d5d5d;
+    width:60%;
+    padding:8px;
+}
 
-        </div>
+input, textarea{
+    outline: none;
+    border:none;
+    border: solid 1px #f2f2f2;
+}
 
-        <footer>
-            <p>
-                <a href="index.html">Главная</a> |
-                <a href="films.html">Фильмы</a> |
-                <a href="show.html">Сериалы</a> |
-                <a href="rating.html">Рейтинг фильмов</a> |
-                <a href="contact.html">Контакты</a> 
-            </p>
-            <p>kinopoisk.ru</p>
-        </footer>
+h1, h2{
+    font:normal 170% 'century gothic', arial;
+    margin: 0 0 15px 0;
+    padding: 15px 0 5px 0;
+}
 
-    </div>
+h2{
+    font-size: 140%;
+}
 
-</body>
-</html>
+a, a:hover{
+    outline:none;
+    text-decoration: underline;
+    color: #aeb002;
+}
+
+ul{
+    margin: 2px 0 22px 17px;
+}
+
+ul li{
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    line-height: 1.5em;
+}
+
+header{
+    background-color: darkslateblue;
+    height: 177px;
+    font-size: 0.8em;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 900px;
+}
+
+ul .menu{
+    text-align:center;
+}
+
+.main, .logo, .menubar, .site_content, .footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    width: 880px;
+    padding-bottom: 40px;
+}
+
+.logo h1, .logo h2 {
+    font:normal 300% 'century gothic', arial, sans-serif;
+    margin: 0 0 0 9px;
+}
+
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover{
+    padding: 22px 0 0 0;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.logo_text h2{
+    font-size: 0.9em;
+    padding:4px 0 0 0;
+    color: #999;
+}
+
+.menubar{
+    width:900px;
+    height:46px;
+}
+
+.menu{
+    display: inline-block;
+    text-align:center;
+}
+
+
+ul.menu li{
+    float:left;
+    padding: 0 0 0 9px;
+    list-style: none;
+    margin: 1px 2px 0 0;
+}
+
+ul.menu li a{
+    font:normal 100% 'trebuchet ms', sans-serif;
+    display:inline-block;
+    height: 20px;
+    padding: 6px 35px 5px 28px;
+    color:#fff;
+    text-decoration: none;
+}
+
+ul.menu li.selected a{
+    color:#aeb002;
+}
+
+ul.menu li a:hover{
+    color:#e4ec04;
+}
+
+hr{
+    border: solid 1px #f3f3f3;
+}
+
+.site_content{
+    width: 880px;
+    overflow:hidden;
+    margin: 20px auto 0 auto;
+    background-color: white;
+}
+
+.sidebar_container{
+    float:right;
+    width:224px;
+}
+
+.sidebar{
+    float: right;
+    width: 222px;
+    padding: 5%;
+    margin:0 0 16px 0;
+    border: solid 1px #f2f2f2;
+    border-radius:5px;
+    background-color:#f9f9f9;
+}
+
+.btn{
+    padding:8px;
+    background-color:white;
+    cursor:pointer;
+}
+
+.sidebar h2{
+    color:#136cb2;
+}
+
+.lables_passreg_text{
+    font-size: 0.7em;
+    margin-top:3%;
+    margin-left:2%;
+}
+
+.sidebar ul{
+    margin:0;
+}
+
+.sidebar ul li{
+    list-style-type: none;
+    margin: 0 0 0 0;
+}
+
+.sidebar .rating_sidebar{
+    float: right;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.films_block{
+    margin-bottom: 5%;
+}
+
+.films_block img{
+    border-radius:5px;
+    border: solid 5px #dad7d5;
+    width:22%
+}
+
+.posts .posts_content{
+    font-size:0.8em;
+}
+
+/*Страница просмотра фильма*/
+
+.info_film_page{
+    margin-top:2%;
+    margin-bottom: 4%;
+}
+
+.info_film_page .label {
+    font-size: 1.2em;
+}
+
+.info_film_page .value {
+    font-size: 1em;
+    color: #49945A;
+    margin-right: 3%;
+}
+
+.descriptions_film{
+    margin-bottom: 15%;
+}
+
+.descriptions_film img{
+    float:left;
+    margin-right: 2%;
+    border-radius: 5px;
+    border: solid 5px #dad7d5;
+    /*margin-bottom: 50px;*/
+}
+
+.reviews{
+    margin-bottom: 4%;
+    font-size: 0.9em;
+}
+
+.reviews .review_name{
+    background-color:#7268AD;
+    color:white;
+    padding:1%;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.rewievs .review_text{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%
+}
+
+.send{
+    margin-bottom: 4%;
+}
+
+.send input[type="text"], textarea {
+    border: solid 1px #c3c3c3;
+    margin-bottom: 2%;
+}
+
+.send input[type="text"] {
+    width:98%;
+}
+
+.send textarea {
+    width: 624px;
+    height:200px;
+}
+
+.send input[type="submit"]{
+    width:500px;
+}
+
+.send_contact textarea{
+    width:516px;
+}
+
+
+.info_film{
+    margin-bottom:5%;
+    background-color:#f9f9f9;
+    padding:5%;
+    height:270px;
+}
+
+.info_film img{
+    float: left;
+    margin-right:2%;
+    border-radius:5px;
+    border:solid 5px #dad7d5;
+    width:25%;
+}
+
+.button{
+    background-color: #7268ad;
+    padding:2%;
+    color:white;
+    border-radius:5px;
+    float:right;
+    margin-top: 5%;
+    clear:both;
+    font-size:0.8em;
+}
+
+.button a{
+    color:white;
+}
+
+table{
+    width:70%;
+    border: solid 1px #f4f4f4;
+}
+
+.send_contact{
+    width: 40%;
+}
+
+td{
+    padding:2%;
+    border: solid 1px #f4f4f4;
+}
+
+td img{
+    width: 60px;
+    vertical-align:middle;
+}
+
+.center{
+    text-align: center;
+}
+
+.rating{
+    font-weight:bold;
+}
+
+.footer{
+    width: 100%;
+    height:100px;
+    padding:28px 0 5px 0;
+    text-align:center;
+    background-color:darksLateBlue;
+    color:#a8aa94;
+    margin-left:0px;
+    margin-right:0px;
+    min-width:900px;
+}
+
+.footer a{
+    color:#A8AA94;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+.footer p{
+    padding: 0 0 10px 0;
+}
+
+blockquote{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+blockquote footer{
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 50px;
+}
+nav{
+    margin-left: 50px;
+}
+article img{
+    margin-right: 30px;
+}
+
+header .menu{
+    margin-left: 450px;
+}
+
+/*
+aside{
+    margin-left:50px;
+}
+*/
