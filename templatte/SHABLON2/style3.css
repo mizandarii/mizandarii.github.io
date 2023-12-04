@@ -1,0 +1,12 @@
+#video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#video {
+    flex: 1;
+}
+#description {
+    flex: 1;
+    padding: 20px;
+}
