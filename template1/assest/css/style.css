@@ -1,0 +1,37 @@
+.row {
+    background: #cfce95;
+    height: 300px;
+}
+
+.row div{
+    text-align: center;
+    height: 50px;
+}
+
+.row div:nth-child(odd){
+    background-color: rgb(99, 139, 70);
+}
+
+.row div:nth-child(even){
+    background-color: rgb(146, 186, 65);
+}
+
+.custom-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* text color */
+    cursor: pointer;
+  }
+  
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card{
+    height:200px;
+}
+
+.btn btn-primary{
+    background-color: rgb(86, 129, 105);
+}
