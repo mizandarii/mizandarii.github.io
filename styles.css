@@ -12,6 +12,7 @@ html{
 }
 
 .container{
+    margin-bottom: 100px;
     min-height: 250px;
 }
 
