@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.container{
+    padding-left: 20px;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+
+
+.promo{
+    height: 1000px;
+    background: url("../img/christin-hume-0MoF-Fe0w0A-unsplash.jpg") center center/cover no-repeat;
+    font-family: "Jura", sans-serif;
+    padding: 39px 0 62px 0;
+    color: #DFB98E;
+    
+}
+
+.promo .container{
+    margin-top: 350px;
+}
+
+.promo h1{
+    font-size: 50px;
+    -webkit-text-stroke: #252525 0.2vw;
+    color: #DFB98E;
+}
+
+
+
+.promo .promo_text{
+    padding: 0 13px;
+    margin-top: 2vw;
+    color: #ffffff;
+    -webkit-text-stroke: #252525 0.1vw;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    color: #DFB98E;
+}
+
+
+.more{
+    margin-top: 73px;
+}
+
+.more .more_text{
+    color: #ffffff;
+    font-family: "Roboto - Thin";
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.more .more_img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+
+.benefits{
+    min-height: 500px;
+    padding: 102px 0 107px 0;
+    background-color:#a85621;
+}
+
+
+
+.benefits .benefits_header{
+    color: #DFB98E;
+    font-size: 40px;
+    font-family: "Jura", sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.benefits .benefits_text{
+    /*margin-top: 25px;
+    margin-left: 391px;*/
+    color: #DFB98E;
+    /**/
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 50px;
+
+    font-family: "Jura", sans-serif;
+
+}
+
+.benefits .benefits_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: absolute;*/
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+
+.contact{
+    min-height: 500px;
+    padding: 102px 0 107px 0;
+    background-color:#a85621;
+}
+
+
+
+.contact .contact_header{
+    color: #DFB98E;
+    font-size: 40px;
+    font-family: "Jura", sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.contact .benefits_text{
+    /*margin-top: 25px;
+    margin-left: 391px;*/
+    color: #DFB98E;
+    /**/
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 50px;
+
+    font-family: "Jura", sans-serif;
+
+}
+
+.contact .benefits_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: absolute;*/
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+
+
+.kinds {
+    background-color: #DFB98E;
+    padding: 5% 5%;
+    font-family: "Jura", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.kinds .kinds_header {
+    color: #564433;
+    font-family: "Jura", sans-serif;
+    font-size: 4vw;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.kinds .kinds_wrapper {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.kinds .kinds_wrapper .kinds_item {
+    margin: 2%;
+    font-family: "Jura", sans-serif;
+    text-align: center;
+    flex: 1 1 calc(30% - 4%); /* Adjust width and margin as needed */
+    max-width: calc(30% - 4%);
+}
+
+.kinds .kinds_wrapper .kinds_img {
+    width: 80%;
+}
+
+.kinds .kinds_wrapper .kinds_item .kinds_descr,
+.kinds .kinds_wrapper .kinds_item .kinds_title {
+    margin-top: 2vw;
+    color: #564433;
+    font-family: "Jura", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.kinds .kinds_wrapper .kinds_item .kinds_title {
+    font-size: 3vw;
+}
+
+/* Media queries for responsiveness */
+
+
+@media only screen and (max-width: 1200px) {
+    .kinds .kinds_wrapper .kinds_item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .kinds .kinds_header {
+        font-size: 5vw;
+    }
+
+    .kinds .kinds_wrapper .kinds_item .kinds_descr,
+    .kinds .kinds_wrapper .kinds_item .kinds_title {
+        font-size: 3vw;
+    }
+
+    .kinds .kinds_wrapper .kinds_item .kinds_title {
+        font-size: 4vw;
+    }
+}
+
+
+
+.session{
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background-color: #912005;
+}
+.session .session_header{
+    color:#DFB98E;
+    text-align: center;
+    font-family: "Jura", sans-serif;
+    margin-bottom: 100px;
+}
+
+.session .session_wrapper{
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.session .session_wrapper .session_item{
+    width: 204px;
+}
+
+.session .session_wrapper .session_icon{
+    width: 50%;
+    height: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.session .session_wrapper .session_item .session_descr{
+    margin-top: 25px;
+    text-align: center;
+    color:#DFB98E;
+    font-family: "Jura", sans-serif;
+    /**/
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+
+.gift{
+    background-image: url("../img/massage_gift.jpg");
+    height:100%;
+    color:#DFB98E;
+    font-family: "Jura", sans-serif;
+    padding-bottom: 40px;
+
+}
+
+.gift .gift_header{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    font-size: 40px;
+    text-align: center;
+    font-size: 60px;
+    -webkit-text-stroke: #252525 2px;
+}
+
+.gift .gift_img{
+    width: 500px;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gift_img:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+
+.gift .gift_text1{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+
+    -webkit-text-stroke: #252525 0.8px;
+}
+
+.gift .gift_text2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+
+    -webkit-text-stroke: #252525 0.8px;
+    margin-bottom: 40px;
+}
+
+
+.footer {
+    background-color: #564433;
+    color: #DFB98E;
+}
+
+.contact_wrap {
+    background-color: #564433;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact_header {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #DFB98E;
+    font-family: "Jura", sans-serif;
+    font-weight:300px;
+}
+
+.contact_wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact_item {
+    text-align: center;
+    flex: 0 0 20%; /* Adjust the flex basis to control the width of each item */
+    margin-bottom: 20px;
+}
+
+.contact_descr {
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: "Jura", sans-serif;
+    color: #DFB98E;
+}
+
+.contact_wrap .contact_wrapper .contact_item .contact_icon {
+    max-width: 20%;
+}
+
+.contact_icon,
+.gift_img,
+.session_icon,
+.kinds_img
+ {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact_icon:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+.gift_img:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+.session_icon:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+.kinds_img:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
