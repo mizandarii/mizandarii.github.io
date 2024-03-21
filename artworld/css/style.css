@@ -1,9 +1,11 @@
-*{
-    background-color:#F7F4E9;
+* {
+    max-width: 100%;
+    background-color: #F7F4E9;
 }
 
-body{
+body {
     padding: 30px;
+    max-width: 100%;
 }
 
 @font-face {
@@ -15,7 +17,6 @@ body{
     font-style: normal;
 }
 
-
 .menu {
     display: flex;
     justify-content: space-between;
@@ -24,65 +25,75 @@ body{
     color: #000000;
     font-family: "Century Gothic", sans-serif;
     font-size: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px; /* Reduced margin-bottom */
 }
-.menu a {
 
+.menu a {
+    color: #000000;
     text-decoration: none;
     margin-right: 20px;
 }
+
 .menu a:last-child {
     margin-right: 0;
 }
 
-h1{
+h1 {
     text-align: center;
     color: #F5221B;
-    font-size: 400px;
+    font-size: 10vw; /* Responsive font size */
     font-family: "Moglan", sans-serif;
     padding: 0;
     margin: 0;
+    max-width: 100%;
 }
 
-.menu_icon{
-    max-width: 80px;
+.menu_icon {
+    max-width: 20%; /* Adjusted icon size */
 }
 
-hr{
+hr {
     background-color: #F5221B;
     height: 2px;
-    width:1640px;
+    width: 100%; /* Adjusted HR width */
+    max-width: 1640px; /* Added max-width to prevent overflowing */
+    margin: 20px auto; /* Centered and reduced margin */
 }
 
-.flowers{
-    width:1640px;
-    margin-left:7px;
-    margin-top:120px;
+.flowers {
+    width: 100%;
+    max-width: 1640px; /* Added max-width to prevent overflowing */
+    margin: 0 auto; /* Centered */
+    margin-top: 20px; /* Adjusted margin-top */
 }
 
-.container1 {
-    margin-top: 100px;
+.container1, .container2 {
+    margin-top: 20px; /* Reduced margin-top */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-
 }
 
-.left-column1 {
+.left-column1, .right-column1, .left-column2, .right-column2 {
     flex: 1;
-    padding-right: 20px;
-    max-width: 40%;
 }
 
-.right-column1{
-    flex: 1;
+.right-column1 {
     padding-left: 20px;
     display: flex;
+    flex-direction: column; /* Changed flex-direction to column */
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+}
+
+.right-column2 {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column; /* Changed flex-direction to column */
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
@@ -91,82 +102,45 @@ hr{
 
 h2 {
     color: #000000;
-    font-family:'Moglan', sans-serif;
+    font-family: 'Moglan', sans-serif;
     font-weight: 1000;
-    font-size: 100px;
+    font-size: 5vw; /* Responsive font size */
     width: 100%; /* Set the width to 100% */
+    max-width: 70%; /* Adjusted max-width */
+    text-align: center; /* Centered text */
 }
 
 p {
-    margin-top: 50px;
+    margin-top: 20px; /* Adjusted margin-top */
     color: #000000;
-    font-size: 18;
+    font-size: 2vw; /* Responsive font size */
     font-family: "Century Gothic", sans-serif;
-    width: 60%;
+    width: 100%; /* Set the width to 100% */
+    max-width: 60%; /* Adjusted max-width */
+    text-align: center; /* Centered text */
 }
 
-.demos {
-
-    max-width: 110%;
-    max-height: 110%; /* Added max-height property */
-    width: auto; /* Ensure image maintains aspect ratio */
+.demos, .appStore, .arrows, .video, .learnMore {
+    max-width: 100%; /* Adjusted max-width */
     height: auto; /* Ensure image maintains aspect ratio */
+    margin-top: 20px; /* Adjusted margin-top */
 }
 
-.appStore {
-    margin-top: 50px;
-    max-width: 50%;
-    max-height: 50%; /* Added max-height property */
-    width: auto; /* Ensure image maintains aspect ratio */
+.learnMore {
+    max-width: 30%; /* Adjusted max-width */
+}
+
+/* Add this CSS code to your existing stylesheet */
+
+.appStore, .arrows, .video, .learnMore {
+    max-width: 100%; /* Adjusted max-width */
     height: auto; /* Ensure image maintains aspect ratio */
-}
-.arrows {
-    margin-top: 50px;
-    max-width: 20%;
-    max-height: 20%; /* Added max-height property */
-    width: auto; /* Ensure image maintains aspect ratio */
-    height: auto; /* Ensure image maintains aspect ratio */
+    margin-top: 20px; /* Adjusted margin-top */
+    cursor: pointer; /* Add cursor pointer */
+    transition: transform 0.2s ease; /* Add transition effect */
 }
 
-
-
-
-
-.container2 {
-    margin-top: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-    margin-left: 100px;
-
+.appStore:hover, .arrows:hover, .video:hover, .learnMore:hover {
+    transform: scale(1.1); /* Add hover effect */
 }
 
-.left-column2 {
-    flex: 1;
-    padding-right: 20px;
-    max-width: 40%;
-}
-
-.right-column2 {
-    flex: 1;
-    padding-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    margin-left: 70px;
-}
-
-.right-column2 h2{
-    max-width: 70%;
-}
-
-.right-column2 p{
-    max-width: 50%;
-}
-
-.learnMore{
-    margin-top:50px;
-}
