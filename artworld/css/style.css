@@ -41,7 +41,7 @@ body {
 h1 {
     text-align: center;
     color: #F5221B;
-    font-size: 10vw; /* Responsive font size */
+    font-size: 20vw; /* Responsive font size */
     font-family: "Moglan", sans-serif;
     padding: 0;
     margin: 0;
