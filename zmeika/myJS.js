@@ -1,3 +1,4 @@
+
 var FIELD_SIZE_X = 30;
 var FIELD_SIZE_Y = 30;
 
@@ -10,34 +11,40 @@ var food_timer;
 var score = 0;
 
 function init(){
-    prepareGameField();
+    prepareGameField();//генерация поля
 
     var wrap = document.getElementsByClassName('wrap')[0];
     wrap.style.width = '600px';
-
+    //события кнопок старт и новая игра
     document.getElementById('snake-start').addEventListener('click', startGame);
     document.getElementById('snake-renew').addEventListener('click', refreshGame);
 
+    //отслеживание клавиш клавиатуры
     addEventListener('keydown', changeDirection);
 }
 
+
+//генерация игрового поля
 function prepareGameField(){
+    //Создание таблицы
     var game_table = document.createElement('table');
     game_table.setAttribute('class', 'game-table');
-
+    //генерация ячеек игровой таблицы
     for (var i = 0; i < FIELD_SIZE_X; i++){
+        //создание строки
         var row = document.createElement('tr');
         row.className = 'game-table-row row-' + i;
 
         for(var j = 0; j < FIELD_SIZE_Y; j++){
+            //создание ячейки
             var cell = document.createElement('td');
             cell.className = 'game-table-cell cell-' + i + '-' + j;
 
-            row.appendChild(cell);
+            row.appendChild(cell);//добавление ячейки
         }
-        game_table.appendChild(row);
+        game_table.appendChild(row);//добавление строки
     }
-    document.getElementById('snake-field').appendChild(game_table);
+    document.getElementById('snake-field').appendChild(game_table);//добавление таблицы
 }
 
 function startGame(){
@@ -51,7 +58,7 @@ function startGame(){
     snake_timer = setInterval(move, SNAKE_SPEED);
 }
 
-
+//Функция расположения змейки на игровом поле
 function respawn(){
     var start_coord_x = Math.floor(FIELD_SIZE_X / 2);
     var start_coord_y = Math.floor(FIELD_SIZE_Y / 2);
@@ -66,7 +73,9 @@ function respawn(){
     snake.push(snake_tail);
 }
 
+//Движение змейки
 function move(){
+    //Сборка классов
     var snake_head_classes = snake[snake.length - 1].getAttribute('class').split(' ');
 
     var new_unit;
@@ -187,4 +196,5 @@ function refreshGame(){
     location.reload();
 }
 
+//инициализация
 window.onload = init;
