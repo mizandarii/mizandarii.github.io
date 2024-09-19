@@ -1,48 +1,78 @@
-html{
+html, body {
     font-size: 10px;
-    background: url(https://i.imgur.com/b9r5sEL.jpg) bottom center;
+    background: url("drums2.jpg") no-repeat center center fixed;
     background-size: cover;
-}
-body, html{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.keys{
+.keys {
     display: flex;
-    flex: 1;
-    min-height:100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+    max-width: 100%; 
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
     border: .4rem solid black;
     border-radius: .5rem;
-    margin: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem .5rem;
-    transition: all .07rem ease;
-    width: 10rem;
+    padding: 1rem;
+    width: 8rem;  
+    height: 8rem; 
+    background: rgba(9, 0, 0, 0.4);
     text-align: center;
     color: white;
-    background: rgba(9, 0, 0, 0.4);
     text-shadow: 0 0 0.5rem black;
+    transition: all .07s ease;
 }
 
-.playing{
+.playing {
     transform: scale(1.1);
-    border-color:#FFc600;
+    border-color: #FFc600;
     box-shadow: 0 0 1rem #ffc600;
 }
 
-kbd{
-    display: block;
-    font-size: 4rem;
+kbd {
+    font-size: 2.5rem; 
 }
 
-.sound{
+.sound {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    color:#ffc600;
+    color: #ffc600;
+    margin-top: .5rem;
+}
+
+@media (max-width: 768px) {
+    .key {
+        width: 6rem;
+        height: 6rem;
+    }
+    kbd {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .key {
+        width: 5rem;
+        height: 5rem;
+    }
+    kbd {
+        font-size: 1.5rem;
+    }
 }
