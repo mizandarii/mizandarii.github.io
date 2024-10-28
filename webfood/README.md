@@ -16,15 +16,15 @@ Projekti arendamiseks on kasutatud järgmisi väliseid pakette:
 
 - webpack-cli (^3.3.12): Komandireal kasutatav liides Webpacki tööriistade jaoks, mis võimaldab kasutada Webpacki käsurea kaudu.
 
-##Projekti ehitamine
+## Projekti ehitamine
 
 - Kloneerige projekt githubist
 - Liikuge projekti kausta:
 - Paigaldage sõltuvused: Veenduge, et teil oleks paigaldatud Node.js. Paigaldage kõik vajalikud sõltuvused, kasutades järgmisi käske:
-  npm install
+  `npm install` 
 
 
-##Projekti käivitamine
+## Projekti käivitamine
 Pärast sõltuvuste paigaldamist saate projekti käivitada järgmise käsuga:
-npm start
+` npm start` 
 See käivitab serveri, mis võimaldab teil projektis töötada.
