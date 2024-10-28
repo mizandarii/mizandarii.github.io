@@ -19,7 +19,7 @@ Projekti arendamiseks on kasutatud järgmisi väliseid pakette:
 ## Projekti ehitamine
 
 - Kloneerige projekt githubist
-- Liikuge projekti kausta:
+- Liikuge projekti kausta
 - Paigaldage sõltuvused: Veenduge, et teil oleks paigaldatud Node.js. Paigaldage kõik vajalikud sõltuvused, kasutades järgmisi käske:
   `npm install` 
 
