@@ -1,0 +1,35 @@
+{
+  "menu": [
+    {
+      "img": "img/tabs/vegy.jpg",
+      "altimg": "vegy",
+      "title": "Menüü ´Fitness´",
+      "descr": "Menüü ´Fitness´ on uus lähenemine roogade valmistamisele: rohkem värskeid köögi- ja puuvilju. Inimestele, kes on huvitatud spordist; aktiivne ja terve. See on täiesti uus toode parima hinna ja kõrge kvaliteediga!",
+      "price": 9
+    },
+    {
+      "img": "img/tabs/post.jpg",
+      "altimg": "post",
+      "title": "Menüü 'Paastmenüü'",
+      "descr": "Meie eriline 'paastumenüü' on hoolikas koostisosade valik: täielik loomsete saaduste puudumine. Täielik harmoonia iseenda ja loodusega igas elemendis! Kõik saab olema Om!",
+      "price": 21
+    },
+    {
+      "img": "img/tabs/elite.jpg",
+      "altimg": "elite",
+      "title": "Menüü 'Preemium'",
+      "descr": "Premium” menüü – kasutame lisaks ilusale pakendikujundusele ka kvaliteetset roogade teostust. Punane kala, mereannid, puuviljad – restoranimenüü ilma restoranis käimata!",
+      "price": 14
+    },
+    {
+      "img": "img/tabs/hamburger.jpg",
+      "altimg": "hamburger",
+      "title": "Menüü 'Taaskaalustatud'",
+      "descr": "Tasakaalustatud menüü tähendab, et teie toitumine vastab kõigile teaduslikele soovitustele. Arvutame hoolikalt välja Sinu vajaduse kasutatud toidu järele ja koostame Sulle parimad nõud.",
+      "price": 21
+    }
+  ],
+  "requests": [
+    
+  ]
+}
