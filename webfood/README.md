@@ -1,5 +1,5 @@
-#WEBFOOD 
-##Kasutatud paketid
+# WEBFOOD 
+## Kasutatud paketid
 Projekti arendamiseks on kasutatud järgmisi väliseid pakette:
 
 - @babel/core (^7.9.0): Babel on JavaScripti kompilaator, mis võimaldab kirjutada uusimas JavaScripti (ES6 ja hiljem) ning konverteerib selle tagasi vanemasse versiooni, et see töötaks vanemates brauserites.
